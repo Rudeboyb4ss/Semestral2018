@@ -541,13 +541,14 @@ void MostrarOpciones(int **jugadores,int PosicionFila1,int PosicionColumna1, int
         printf("\n");
     }
 
+    scanf("%c");
     char MovimientoSeleccionado;
     int validez = 0;
     
     while(validez == 0){ 
     printf("ingrese: \n [U] para arriba.\n [D] para abajo.\n [L] para izquierda.\n [R] para derecha.\n");
     printf("Ingrese el movimiento que desea hacer en el tablero :");
-    scanf("%c%*c",&MovimientoSeleccionado);
+    scanf("%c",&MovimientoSeleccionado);
 
     for (int i = 0; i < filas; ++i){
         for (int j = 0; j < columnas; ++j){
